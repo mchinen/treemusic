@@ -1,0 +1,593 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		182FF940105D37DD0070775D /* VoiceHack.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 182FF93E105D37DD0070775D /* VoiceHack.cpp */; };
+		182FF941105D37DD0070775D /* VoiceHack.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 182FF93F105D37DD0070775D /* VoiceHack.h */; };
+		182FF943105D37F80070775D /* VoicForm.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 182FF942105D37F80070775D /* VoicForm.h */; };
+		182FF945105D38110070775D /* VoicForm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 182FF944105D38110070775D /* VoicForm.cpp */; };
+		182FF953105D386C0070775D /* FormSwep.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 182FF950105D386C0070775D /* FormSwep.h */; };
+		182FF954105D386C0070775D /* OnePole.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 182FF951105D386C0070775D /* OnePole.h */; };
+		182FF955105D386C0070775D /* SingWave.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 182FF952105D386C0070775D /* SingWave.h */; };
+		182FF959105D38990070775D /* FormSwep.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 182FF956105D38980070775D /* FormSwep.cpp */; };
+		182FF95A105D38990070775D /* OnePole.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 182FF957105D38990070775D /* OnePole.cpp */; };
+		182FF95B105D38990070775D /* SingWave.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 182FF958105D38990070775D /* SingWave.cpp */; };
+		182FF95F105D38C00070775D /* FileLoop.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 182FF95D105D38C00070775D /* FileLoop.h */; };
+		182FF960105D38C00070775D /* Modulate.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 182FF95E105D38C00070775D /* Modulate.h */; };
+		182FF963105D38D40070775D /* FileLoop.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 182FF961105D38D40070775D /* FileLoop.cpp */; };
+		182FF964105D38D40070775D /* Modulate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 182FF962105D38D40070775D /* Modulate.cpp */; };
+		182FF967105D39170070775D /* FileWvIn.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 182FF966105D39170070775D /* FileWvIn.h */; };
+		182FF969105D39240070775D /* FileWvIn.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 182FF968105D39240070775D /* FileWvIn.cpp */; };
+		182FF96C105D39590070775D /* FileRead.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 182FF96B105D39590070775D /* FileRead.cpp */; };
+		182FF96F105D39720070775D /* FileRead.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 182FF96D105D39720070775D /* FileRead.h */; };
+		182FF970105D39720070775D /* WvIn.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 182FF96E105D39720070775D /* WvIn.h */; };
+		182FF973105D39980070775D /* Phonemes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 182FF972105D39980070775D /* Phonemes.cpp */; };
+		182FF975105D39A80070775D /* Phonemes.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 182FF974105D39A80070775D /* Phonemes.h */; };
+		182FF97E105D3AB10070775D /* VoiceHackSynthesizer.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 182FF97C105D3AB10070775D /* VoiceHackSynthesizer.h */; };
+		182FF97F105D3AB10070775D /* VoiceHackSynthesizer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 182FF97D105D3AB10070775D /* VoiceHackSynthesizer.cpp */; };
+		18340D210ECB55C0001EC570 /* handyfuncs.c in Sources */ = {isa = PBXBuildFile; fileRef = 18340D1F0ECB55C0001EC570 /* handyfuncs.c */; };
+		18340D220ECB55C0001EC570 /* handyfuncs.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 18340D200ECB55C0001EC570 /* handyfuncs.h */; };
+		18340E010EDCE362001EC570 /* TreeSynthesizer.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 18340DFF0EDCE362001EC570 /* TreeSynthesizer.h */; };
+		18340E020EDCE362001EC570 /* TreeSynthesizer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 18340E000EDCE362001EC570 /* TreeSynthesizer.cpp */; };
+		18340E3A0EDCEC62001EC570 /* AudioBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 18340E340EDCEC61001EC570 /* AudioBuffer.cpp */; };
+		18340E3B0EDCEC62001EC570 /* AudioBuffer.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 18340E350EDCEC61001EC570 /* AudioBuffer.h */; };
+		18340E3C0EDCEC62001EC570 /* MonoBuffer16.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 18340E360EDCEC61001EC570 /* MonoBuffer16.cpp */; };
+		18340E3D0EDCEC62001EC570 /* MonoBuffer16.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 18340E370EDCEC61001EC570 /* MonoBuffer16.h */; };
+		18340E3E0EDCEC62001EC570 /* StereoBuffer16.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 18340E380EDCEC62001EC570 /* StereoBuffer16.cpp */; };
+		18340E3F0EDCEC62001EC570 /* StereoBuffer16.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 18340E390EDCEC62001EC570 /* StereoBuffer16.h */; };
+		18340EBE0EDCEFE5001EC570 /* NoiseBandSynthesizer.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 18340EBC0EDCEFE5001EC570 /* NoiseBandSynthesizer.h */; };
+		18340EBF0EDCEFE5001EC570 /* NoiseBandSynthesizer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 18340EBD0EDCEFE5001EC570 /* NoiseBandSynthesizer.cpp */; };
+		1848F5350FD56C6900BBDC1E /* SaxHackSynthesizer.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1848F5330FD56C6900BBDC1E /* SaxHackSynthesizer.h */; };
+		1848F5360FD56C6900BBDC1E /* SaxHackSynthesizer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1848F5340FD56C6900BBDC1E /* SaxHackSynthesizer.cpp */; };
+		1848F5530FD570A500BBDC1E /* SaxHack.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1848F5510FD570A500BBDC1E /* SaxHack.cpp */; };
+		1848F5540FD570A500BBDC1E /* SaxHack.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1848F5520FD570A500BBDC1E /* SaxHack.h */; };
+		1848F5570FD570F200BBDC1E /* Saxofony.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1848F5550FD570F200BBDC1E /* Saxofony.cpp */; };
+		1848F5580FD570F200BBDC1E /* SKINI.msg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1848F5560FD570F200BBDC1E /* SKINI.msg */; };
+		1848F5610FD5715B00BBDC1E /* DelayL.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1848F5590FD5715B00BBDC1E /* DelayL.h */; };
+		1848F5620FD5715B00BBDC1E /* Envelope.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1848F55A0FD5715B00BBDC1E /* Envelope.h */; };
+		1848F5630FD5715B00BBDC1E /* Instrmnt.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1848F55B0FD5715B00BBDC1E /* Instrmnt.h */; };
+		1848F5640FD5715B00BBDC1E /* Noise.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1848F55C0FD5715B00BBDC1E /* Noise.h */; };
+		1848F5650FD5715B00BBDC1E /* OneZero.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1848F55D0FD5715B00BBDC1E /* OneZero.h */; };
+		1848F5660FD5715B00BBDC1E /* ReedTable.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1848F55E0FD5715B00BBDC1E /* ReedTable.h */; };
+		1848F5670FD5715B00BBDC1E /* Saxofony.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1848F55F0FD5715B00BBDC1E /* Saxofony.h */; };
+		1848F5680FD5715B00BBDC1E /* SineWave.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1848F5600FD5715B00BBDC1E /* SineWave.h */; };
+		1848F56E0FD571C000BBDC1E /* DelayL.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1848F5690FD571C000BBDC1E /* DelayL.cpp */; };
+		1848F56F0FD571C000BBDC1E /* Envelope.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1848F56A0FD571C000BBDC1E /* Envelope.cpp */; };
+		1848F5700FD571C000BBDC1E /* Noise.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1848F56B0FD571C000BBDC1E /* Noise.cpp */; };
+		1848F5710FD571C000BBDC1E /* OneZero.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1848F56C0FD571C000BBDC1E /* OneZero.cpp */; };
+		1848F5720FD571C000BBDC1E /* SineWave.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1848F56D0FD571C000BBDC1E /* SineWave.cpp */; };
+		1848F5770FD571E500BBDC1E /* Filter.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1848F5760FD571E500BBDC1E /* Filter.h */; };
+		1848F57F0FD5721E00BBDC1E /* Stk.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1848F57E0FD5721E00BBDC1E /* Stk.cpp */; };
+		1848F5810FD5723100BBDC1E /* Stk.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1848F5800FD5723100BBDC1E /* Stk.h */; };
+		1848F5870FD5727D00BBDC1E /* Delay.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1848F5860FD5727D00BBDC1E /* Delay.cpp */; };
+		1848F5890FD5728D00BBDC1E /* Delay.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1848F5880FD5728D00BBDC1E /* Delay.h */; };
+		1848F58C0FD572B200BBDC1E /* Generator.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1848F58B0FD572B100BBDC1E /* Generator.h */; };
+		1848F58F0FD572E000BBDC1E /* Function.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1848F58E0FD572E000BBDC1E /* Function.h */; };
+		189A2762109BACF1003C7147 /* BowedSynthesizer.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 189A2760109BACF1003C7147 /* BowedSynthesizer.h */; };
+		189A2763109BACF1003C7147 /* BowedSynthesizer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 189A2761109BACF1003C7147 /* BowedSynthesizer.cpp */; };
+		189A276A109BAD8D003C7147 /* Bowed.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 189A2769109BAD8D003C7147 /* Bowed.cpp */; };
+		189A276C109BADA0003C7147 /* Bowed.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 189A276B109BADA0003C7147 /* Bowed.h */; };
+		189A2776109BAE0B003C7147 /* BowTable.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 189A2775109BAE0B003C7147 /* BowTable.h */; };
+		189A2779109BAE41003C7147 /* BiQuad.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 189A2778109BAE41003C7147 /* BiQuad.h */; };
+		189A277C109BAE58003C7147 /* ADSR.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 189A277B109BAE58003C7147 /* ADSR.cpp */; };
+		189A277E109BAE66003C7147 /* ADSR.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 189A277D109BAE66003C7147 /* ADSR.h */; };
+		189A27AB109BB0E4003C7147 /* BiQuad.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 189A27AA109BB0E4003C7147 /* BiQuad.cpp */; };
+		189A27B2109BB909003C7147 /* BandedWG.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 189A27B1109BB909003C7147 /* BandedWG.cpp */; };
+		189A27B4109BB916003C7147 /* BandedWG.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 189A27B3109BB916003C7147 /* BandedWG.h */; };
+		189A27B8109BB938003C7147 /* BandedWGSynthesizer.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 189A27B6109BB938003C7147 /* BandedWGSynthesizer.h */; };
+		189A27B9109BB938003C7147 /* BandedWGSynthesizer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 189A27B7109BB938003C7147 /* BandedWGSynthesizer.cpp */; };
+		189A27EE109C8626003C7147 /* Shakers.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 189A27ED109C8626003C7147 /* Shakers.cpp */; };
+		189A27F0109C8634003C7147 /* Shakers.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 189A27EF109C8634003C7147 /* Shakers.h */; };
+		189A27F4109C8649003C7147 /* ShakersSynthesizer.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 189A27F2109C8649003C7147 /* ShakersSynthesizer.h */; };
+		189A27F5109C8649003C7147 /* ShakersSynthesizer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 189A27F3109C8649003C7147 /* ShakersSynthesizer.cpp */; };
+		18A27C9F0F3E8F0C0013A1BE /* MetaInterpolation.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 18A27C9D0F3E8F0B0013A1BE /* MetaInterpolation.h */; };
+		18A27CA00F3E8F0C0013A1BE /* MetaInterpolation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 18A27C9E0F3E8F0B0013A1BE /* MetaInterpolation.cpp */; };
+		18BA30B810EC5AE000D51824 /* MultiSynthesizer.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 18BA30B610EC5AE000D51824 /* MultiSynthesizer.h */; };
+		18BA30B910EC5AE000D51824 /* MultiSynthesizer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 18BA30B710EC5AE000D51824 /* MultiSynthesizer.cpp */; };
+		18C5310B0EDA14F40005033B /* Interpolation.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 18C531090EDA14F40005033B /* Interpolation.h */; };
+		18C5310C0EDA14F40005033B /* Interpolation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 18C5310A0EDA14F40005033B /* Interpolation.cpp */; };
+		18C5314A0EDA21170005033B /* ParameterList.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 18C531480EDA21170005033B /* ParameterList.h */; };
+		18C5314B0EDA21170005033B /* ParameterList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 18C531490EDA21170005033B /* ParameterList.cpp */; };
+		18D81E8D0EB917A000FD870D /* TreeNode.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 18D81E8B0EB917A000FD870D /* TreeNode.h */; };
+		18D81E8E0EB917A000FD870D /* TreeNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 18D81E8C0EB917A000FD870D /* TreeNode.cpp */; };
+		8DD76F650486A84900D96B5E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 08FB7796FE84155DC02AAC07 /* main.cpp */; settings = {ATTRIBUTES = (); }; };
+		8DD76F6A0486A84900D96B5E /* treemusic.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = C6859E8B029090EE04C91782 /* treemusic.1 */; };
+		CFE7016C0F2FE3060049671D /* ParamOutputSynthesizer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CFE7FF980F2FE3060049671D /* ParamOutputSynthesizer.cpp */; };
+		CFE7016D0F2FE3060049671D /* ParamOutputSynthesizer.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = CFE7FF990F2FE3060049671D /* ParamOutputSynthesizer.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8DD76F690486A84900D96B5E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 8;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				8DD76F6A0486A84900D96B5E /* treemusic.1 in CopyFiles */,
+				18D81E8D0EB917A000FD870D /* TreeNode.h in CopyFiles */,
+				18340D220ECB55C0001EC570 /* handyfuncs.h in CopyFiles */,
+				18C5310B0EDA14F40005033B /* Interpolation.h in CopyFiles */,
+				18C5314A0EDA21170005033B /* ParameterList.h in CopyFiles */,
+				18340E010EDCE362001EC570 /* TreeSynthesizer.h in CopyFiles */,
+				18340E3B0EDCEC62001EC570 /* AudioBuffer.h in CopyFiles */,
+				18340E3D0EDCEC62001EC570 /* MonoBuffer16.h in CopyFiles */,
+				18340E3F0EDCEC62001EC570 /* StereoBuffer16.h in CopyFiles */,
+				18340EBE0EDCEFE5001EC570 /* NoiseBandSynthesizer.h in CopyFiles */,
+				CFE7016D0F2FE3060049671D /* ParamOutputSynthesizer.h in CopyFiles */,
+				18A27C9F0F3E8F0C0013A1BE /* MetaInterpolation.h in CopyFiles */,
+				1848F5350FD56C6900BBDC1E /* SaxHackSynthesizer.h in CopyFiles */,
+				1848F5540FD570A500BBDC1E /* SaxHack.h in CopyFiles */,
+				1848F5580FD570F200BBDC1E /* SKINI.msg in CopyFiles */,
+				1848F5610FD5715B00BBDC1E /* DelayL.h in CopyFiles */,
+				1848F5620FD5715B00BBDC1E /* Envelope.h in CopyFiles */,
+				1848F5630FD5715B00BBDC1E /* Instrmnt.h in CopyFiles */,
+				1848F5640FD5715B00BBDC1E /* Noise.h in CopyFiles */,
+				1848F5650FD5715B00BBDC1E /* OneZero.h in CopyFiles */,
+				1848F5660FD5715B00BBDC1E /* ReedTable.h in CopyFiles */,
+				1848F5670FD5715B00BBDC1E /* Saxofony.h in CopyFiles */,
+				1848F5680FD5715B00BBDC1E /* SineWave.h in CopyFiles */,
+				1848F5770FD571E500BBDC1E /* Filter.h in CopyFiles */,
+				1848F5810FD5723100BBDC1E /* Stk.h in CopyFiles */,
+				1848F5890FD5728D00BBDC1E /* Delay.h in CopyFiles */,
+				1848F58C0FD572B200BBDC1E /* Generator.h in CopyFiles */,
+				1848F58F0FD572E000BBDC1E /* Function.h in CopyFiles */,
+				182FF941105D37DD0070775D /* VoiceHack.h in CopyFiles */,
+				182FF943105D37F80070775D /* VoicForm.h in CopyFiles */,
+				182FF953105D386C0070775D /* FormSwep.h in CopyFiles */,
+				182FF954105D386C0070775D /* OnePole.h in CopyFiles */,
+				182FF955105D386C0070775D /* SingWave.h in CopyFiles */,
+				182FF95F105D38C00070775D /* FileLoop.h in CopyFiles */,
+				182FF960105D38C00070775D /* Modulate.h in CopyFiles */,
+				182FF967105D39170070775D /* FileWvIn.h in CopyFiles */,
+				182FF96F105D39720070775D /* FileRead.h in CopyFiles */,
+				182FF970105D39720070775D /* WvIn.h in CopyFiles */,
+				182FF975105D39A80070775D /* Phonemes.h in CopyFiles */,
+				182FF97E105D3AB10070775D /* VoiceHackSynthesizer.h in CopyFiles */,
+				189A2762109BACF1003C7147 /* BowedSynthesizer.h in CopyFiles */,
+				189A276C109BADA0003C7147 /* Bowed.h in CopyFiles */,
+				189A2776109BAE0B003C7147 /* BowTable.h in CopyFiles */,
+				189A2779109BAE41003C7147 /* BiQuad.h in CopyFiles */,
+				189A277E109BAE66003C7147 /* ADSR.h in CopyFiles */,
+				189A27B4109BB916003C7147 /* BandedWG.h in CopyFiles */,
+				189A27B8109BB938003C7147 /* BandedWGSynthesizer.h in CopyFiles */,
+				189A27F0109C8634003C7147 /* Shakers.h in CopyFiles */,
+				189A27F4109C8649003C7147 /* ShakersSynthesizer.h in CopyFiles */,
+				18BA30B810EC5AE000D51824 /* MultiSynthesizer.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		08FB7796FE84155DC02AAC07 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		182FF93E105D37DD0070775D /* VoiceHack.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = VoiceHack.cpp; sourceTree = "<group>"; };
+		182FF93F105D37DD0070775D /* VoiceHack.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = VoiceHack.h; sourceTree = "<group>"; };
+		182FF942105D37F80070775D /* VoicForm.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = VoicForm.h; sourceTree = "<group>"; };
+		182FF944105D38110070775D /* VoicForm.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = VoicForm.cpp; sourceTree = "<group>"; };
+		182FF950105D386C0070775D /* FormSwep.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = FormSwep.h; sourceTree = "<group>"; };
+		182FF951105D386C0070775D /* OnePole.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = OnePole.h; sourceTree = "<group>"; };
+		182FF952105D386C0070775D /* SingWave.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SingWave.h; sourceTree = "<group>"; };
+		182FF956105D38980070775D /* FormSwep.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = FormSwep.cpp; sourceTree = "<group>"; };
+		182FF957105D38990070775D /* OnePole.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = OnePole.cpp; sourceTree = "<group>"; };
+		182FF958105D38990070775D /* SingWave.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = SingWave.cpp; sourceTree = "<group>"; };
+		182FF95D105D38C00070775D /* FileLoop.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = FileLoop.h; sourceTree = "<group>"; };
+		182FF95E105D38C00070775D /* Modulate.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = Modulate.h; sourceTree = "<group>"; };
+		182FF961105D38D40070775D /* FileLoop.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = FileLoop.cpp; sourceTree = "<group>"; };
+		182FF962105D38D40070775D /* Modulate.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = Modulate.cpp; sourceTree = "<group>"; };
+		182FF966105D39170070775D /* FileWvIn.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = FileWvIn.h; sourceTree = "<group>"; };
+		182FF968105D39240070775D /* FileWvIn.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = FileWvIn.cpp; sourceTree = "<group>"; };
+		182FF96B105D39590070775D /* FileRead.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = FileRead.cpp; sourceTree = "<group>"; };
+		182FF96D105D39720070775D /* FileRead.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = FileRead.h; sourceTree = "<group>"; };
+		182FF96E105D39720070775D /* WvIn.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = WvIn.h; sourceTree = "<group>"; };
+		182FF972105D39980070775D /* Phonemes.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = Phonemes.cpp; sourceTree = "<group>"; };
+		182FF974105D39A80070775D /* Phonemes.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = Phonemes.h; sourceTree = "<group>"; };
+		182FF97C105D3AB10070775D /* VoiceHackSynthesizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VoiceHackSynthesizer.h; sourceTree = "<group>"; };
+		182FF97D105D3AB10070775D /* VoiceHackSynthesizer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VoiceHackSynthesizer.cpp; sourceTree = "<group>"; };
+		18340D1F0ECB55C0001EC570 /* handyfuncs.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = handyfuncs.c; sourceTree = "<group>"; };
+		18340D200ECB55C0001EC570 /* handyfuncs.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = handyfuncs.h; sourceTree = "<group>"; };
+		18340DFF0EDCE362001EC570 /* TreeSynthesizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TreeSynthesizer.h; sourceTree = "<group>"; };
+		18340E000EDCE362001EC570 /* TreeSynthesizer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TreeSynthesizer.cpp; sourceTree = "<group>"; };
+		18340E340EDCEC61001EC570 /* AudioBuffer.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = AudioBuffer.cpp; sourceTree = "<group>"; };
+		18340E350EDCEC61001EC570 /* AudioBuffer.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = AudioBuffer.h; sourceTree = "<group>"; };
+		18340E360EDCEC61001EC570 /* MonoBuffer16.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = MonoBuffer16.cpp; sourceTree = "<group>"; };
+		18340E370EDCEC61001EC570 /* MonoBuffer16.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = MonoBuffer16.h; sourceTree = "<group>"; };
+		18340E380EDCEC62001EC570 /* StereoBuffer16.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = StereoBuffer16.cpp; sourceTree = "<group>"; };
+		18340E390EDCEC62001EC570 /* StereoBuffer16.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = StereoBuffer16.h; sourceTree = "<group>"; };
+		18340EBC0EDCEFE5001EC570 /* NoiseBandSynthesizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoiseBandSynthesizer.h; sourceTree = "<group>"; };
+		18340EBD0EDCEFE5001EC570 /* NoiseBandSynthesizer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NoiseBandSynthesizer.cpp; sourceTree = "<group>"; };
+		1848F5330FD56C6900BBDC1E /* SaxHackSynthesizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SaxHackSynthesizer.h; sourceTree = "<group>"; };
+		1848F5340FD56C6900BBDC1E /* SaxHackSynthesizer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SaxHackSynthesizer.cpp; sourceTree = "<group>"; };
+		1848F5510FD570A500BBDC1E /* SaxHack.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = SaxHack.cpp; sourceTree = "<group>"; };
+		1848F5520FD570A500BBDC1E /* SaxHack.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SaxHack.h; sourceTree = "<group>"; };
+		1848F5550FD570F200BBDC1E /* Saxofony.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = Saxofony.cpp; sourceTree = "<group>"; };
+		1848F5560FD570F200BBDC1E /* SKINI.msg */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = SKINI.msg; sourceTree = "<group>"; };
+		1848F5590FD5715B00BBDC1E /* DelayL.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = DelayL.h; sourceTree = "<group>"; };
+		1848F55A0FD5715B00BBDC1E /* Envelope.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = Envelope.h; sourceTree = "<group>"; };
+		1848F55B0FD5715B00BBDC1E /* Instrmnt.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = Instrmnt.h; sourceTree = "<group>"; };
+		1848F55C0FD5715B00BBDC1E /* Noise.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = Noise.h; sourceTree = "<group>"; };
+		1848F55D0FD5715B00BBDC1E /* OneZero.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = OneZero.h; sourceTree = "<group>"; };
+		1848F55E0FD5715B00BBDC1E /* ReedTable.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = ReedTable.h; sourceTree = "<group>"; };
+		1848F55F0FD5715B00BBDC1E /* Saxofony.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = Saxofony.h; sourceTree = "<group>"; };
+		1848F5600FD5715B00BBDC1E /* SineWave.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SineWave.h; sourceTree = "<group>"; };
+		1848F5690FD571C000BBDC1E /* DelayL.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = DelayL.cpp; sourceTree = "<group>"; };
+		1848F56A0FD571C000BBDC1E /* Envelope.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = Envelope.cpp; sourceTree = "<group>"; };
+		1848F56B0FD571C000BBDC1E /* Noise.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = Noise.cpp; sourceTree = "<group>"; };
+		1848F56C0FD571C000BBDC1E /* OneZero.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = OneZero.cpp; sourceTree = "<group>"; };
+		1848F56D0FD571C000BBDC1E /* SineWave.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = SineWave.cpp; sourceTree = "<group>"; };
+		1848F5760FD571E500BBDC1E /* Filter.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = Filter.h; sourceTree = "<group>"; };
+		1848F57E0FD5721E00BBDC1E /* Stk.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = Stk.cpp; sourceTree = "<group>"; };
+		1848F5800FD5723100BBDC1E /* Stk.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = Stk.h; sourceTree = "<group>"; };
+		1848F5860FD5727D00BBDC1E /* Delay.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = Delay.cpp; sourceTree = "<group>"; };
+		1848F5880FD5728D00BBDC1E /* Delay.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = Delay.h; sourceTree = "<group>"; };
+		1848F58B0FD572B100BBDC1E /* Generator.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = Generator.h; sourceTree = "<group>"; };
+		1848F58E0FD572E000BBDC1E /* Function.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = Function.h; sourceTree = "<group>"; };
+		189A2760109BACF1003C7147 /* BowedSynthesizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BowedSynthesizer.h; sourceTree = "<group>"; };
+		189A2761109BACF1003C7147 /* BowedSynthesizer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BowedSynthesizer.cpp; sourceTree = "<group>"; };
+		189A2769109BAD8D003C7147 /* Bowed.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = Bowed.cpp; sourceTree = "<group>"; };
+		189A276B109BADA0003C7147 /* Bowed.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = Bowed.h; sourceTree = "<group>"; };
+		189A2775109BAE0B003C7147 /* BowTable.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = BowTable.h; sourceTree = "<group>"; };
+		189A2778109BAE41003C7147 /* BiQuad.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = BiQuad.h; sourceTree = "<group>"; };
+		189A277B109BAE58003C7147 /* ADSR.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = ADSR.cpp; sourceTree = "<group>"; };
+		189A277D109BAE66003C7147 /* ADSR.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = ADSR.h; sourceTree = "<group>"; };
+		189A27AA109BB0E4003C7147 /* BiQuad.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = BiQuad.cpp; sourceTree = "<group>"; };
+		189A27B1109BB909003C7147 /* BandedWG.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = BandedWG.cpp; sourceTree = "<group>"; };
+		189A27B3109BB916003C7147 /* BandedWG.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = BandedWG.h; sourceTree = "<group>"; };
+		189A27B6109BB938003C7147 /* BandedWGSynthesizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BandedWGSynthesizer.h; sourceTree = "<group>"; };
+		189A27B7109BB938003C7147 /* BandedWGSynthesizer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BandedWGSynthesizer.cpp; sourceTree = "<group>"; };
+		189A27ED109C8626003C7147 /* Shakers.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = Shakers.cpp; sourceTree = "<group>"; };
+		189A27EF109C8634003C7147 /* Shakers.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = Shakers.h; sourceTree = "<group>"; };
+		189A27F2109C8649003C7147 /* ShakersSynthesizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShakersSynthesizer.h; sourceTree = "<group>"; };
+		189A27F3109C8649003C7147 /* ShakersSynthesizer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ShakersSynthesizer.cpp; sourceTree = "<group>"; };
+		18A27C9D0F3E8F0B0013A1BE /* MetaInterpolation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MetaInterpolation.h; sourceTree = "<group>"; };
+		18A27C9E0F3E8F0B0013A1BE /* MetaInterpolation.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MetaInterpolation.cpp; sourceTree = "<group>"; };
+		18BA30B610EC5AE000D51824 /* MultiSynthesizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultiSynthesizer.h; sourceTree = "<group>"; };
+		18BA30B710EC5AE000D51824 /* MultiSynthesizer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MultiSynthesizer.cpp; sourceTree = "<group>"; };
+		18C531090EDA14F40005033B /* Interpolation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Interpolation.h; sourceTree = "<group>"; };
+		18C5310A0EDA14F40005033B /* Interpolation.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Interpolation.cpp; sourceTree = "<group>"; };
+		18C531480EDA21170005033B /* ParameterList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParameterList.h; sourceTree = "<group>"; };
+		18C531490EDA21170005033B /* ParameterList.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ParameterList.cpp; sourceTree = "<group>"; };
+		18D81E8B0EB917A000FD870D /* TreeNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TreeNode.h; sourceTree = "<group>"; };
+		18D81E8C0EB917A000FD870D /* TreeNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TreeNode.cpp; sourceTree = "<group>"; };
+		8DD76F6C0486A84900D96B5E /* treemusic */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = treemusic; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6859E8B029090EE04C91782 /* treemusic.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = treemusic.1; sourceTree = "<group>"; };
+		CFE7FF980F2FE3060049671D /* ParamOutputSynthesizer.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = ParamOutputSynthesizer.cpp; sourceTree = "<group>"; };
+		CFE7FF990F2FE3060049671D /* ParamOutputSynthesizer.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = ParamOutputSynthesizer.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8DD76F660486A84900D96B5E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08FB7794FE84155DC02AAC07 /* treemusic */ = {
+			isa = PBXGroup;
+			children = (
+				08FB7795FE84155DC02AAC07 /* Source */,
+				C6859E8C029090F304C91782 /* Documentation */,
+				1AB674ADFE9D54B511CA2CBB /* Products */,
+			);
+			name = treemusic;
+			sourceTree = "<group>";
+		};
+		08FB7795FE84155DC02AAC07 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				1848F5500FD5708C00BBDC1E /* FromSTKHack */,
+				18340E330EDCE808001EC570 /* Synthesizers */,
+				18340E320EDCE7F0001EC570 /* Buffers */,
+				18340D1F0ECB55C0001EC570 /* handyfuncs.c */,
+				18340D200ECB55C0001EC570 /* handyfuncs.h */,
+				08FB7796FE84155DC02AAC07 /* main.cpp */,
+				18D81E8B0EB917A000FD870D /* TreeNode.h */,
+				18D81E8C0EB917A000FD870D /* TreeNode.cpp */,
+				18C531090EDA14F40005033B /* Interpolation.h */,
+				18C5310A0EDA14F40005033B /* Interpolation.cpp */,
+				18C531480EDA21170005033B /* ParameterList.h */,
+				18C531490EDA21170005033B /* ParameterList.cpp */,
+				18A27C9D0F3E8F0B0013A1BE /* MetaInterpolation.h */,
+				18A27C9E0F3E8F0B0013A1BE /* MetaInterpolation.cpp */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		18340E320EDCE7F0001EC570 /* Buffers */ = {
+			isa = PBXGroup;
+			children = (
+				18340E340EDCEC61001EC570 /* AudioBuffer.cpp */,
+				18340E350EDCEC61001EC570 /* AudioBuffer.h */,
+				18340E360EDCEC61001EC570 /* MonoBuffer16.cpp */,
+				18340E370EDCEC61001EC570 /* MonoBuffer16.h */,
+				18340E380EDCEC62001EC570 /* StereoBuffer16.cpp */,
+				18340E390EDCEC62001EC570 /* StereoBuffer16.h */,
+			);
+			name = Buffers;
+			sourceTree = "<group>";
+		};
+		18340E330EDCE808001EC570 /* Synthesizers */ = {
+			isa = PBXGroup;
+			children = (
+				CFE7FF980F2FE3060049671D /* ParamOutputSynthesizer.cpp */,
+				CFE7FF990F2FE3060049671D /* ParamOutputSynthesizer.h */,
+				18340DFF0EDCE362001EC570 /* TreeSynthesizer.h */,
+				18340E000EDCE362001EC570 /* TreeSynthesizer.cpp */,
+				18340EBC0EDCEFE5001EC570 /* NoiseBandSynthesizer.h */,
+				18340EBD0EDCEFE5001EC570 /* NoiseBandSynthesizer.cpp */,
+				1848F5330FD56C6900BBDC1E /* SaxHackSynthesizer.h */,
+				1848F5340FD56C6900BBDC1E /* SaxHackSynthesizer.cpp */,
+				182FF97C105D3AB10070775D /* VoiceHackSynthesizer.h */,
+				182FF97D105D3AB10070775D /* VoiceHackSynthesizer.cpp */,
+				189A2760109BACF1003C7147 /* BowedSynthesizer.h */,
+				189A2761109BACF1003C7147 /* BowedSynthesizer.cpp */,
+				189A27B6109BB938003C7147 /* BandedWGSynthesizer.h */,
+				189A27B7109BB938003C7147 /* BandedWGSynthesizer.cpp */,
+				189A27F2109C8649003C7147 /* ShakersSynthesizer.h */,
+				189A27F3109C8649003C7147 /* ShakersSynthesizer.cpp */,
+				18BA30B610EC5AE000D51824 /* MultiSynthesizer.h */,
+				18BA30B710EC5AE000D51824 /* MultiSynthesizer.cpp */,
+			);
+			name = Synthesizers;
+			sourceTree = "<group>";
+		};
+		1848F5500FD5708C00BBDC1E /* FromSTKHack */ = {
+			isa = PBXGroup;
+			children = (
+				189A27EF109C8634003C7147 /* Shakers.h */,
+				189A27ED109C8626003C7147 /* Shakers.cpp */,
+				189A27B3109BB916003C7147 /* BandedWG.h */,
+				189A27B1109BB909003C7147 /* BandedWG.cpp */,
+				189A27AA109BB0E4003C7147 /* BiQuad.cpp */,
+				189A277D109BAE66003C7147 /* ADSR.h */,
+				189A277B109BAE58003C7147 /* ADSR.cpp */,
+				189A2778109BAE41003C7147 /* BiQuad.h */,
+				189A2775109BAE0B003C7147 /* BowTable.h */,
+				189A276B109BADA0003C7147 /* Bowed.h */,
+				189A2769109BAD8D003C7147 /* Bowed.cpp */,
+				182FF974105D39A80070775D /* Phonemes.h */,
+				182FF972105D39980070775D /* Phonemes.cpp */,
+				182FF96D105D39720070775D /* FileRead.h */,
+				182FF96E105D39720070775D /* WvIn.h */,
+				182FF96B105D39590070775D /* FileRead.cpp */,
+				182FF968105D39240070775D /* FileWvIn.cpp */,
+				182FF966105D39170070775D /* FileWvIn.h */,
+				182FF961105D38D40070775D /* FileLoop.cpp */,
+				182FF962105D38D40070775D /* Modulate.cpp */,
+				182FF95D105D38C00070775D /* FileLoop.h */,
+				182FF95E105D38C00070775D /* Modulate.h */,
+				182FF956105D38980070775D /* FormSwep.cpp */,
+				182FF957105D38990070775D /* OnePole.cpp */,
+				182FF958105D38990070775D /* SingWave.cpp */,
+				182FF950105D386C0070775D /* FormSwep.h */,
+				182FF951105D386C0070775D /* OnePole.h */,
+				182FF952105D386C0070775D /* SingWave.h */,
+				182FF944105D38110070775D /* VoicForm.cpp */,
+				182FF942105D37F80070775D /* VoicForm.h */,
+				182FF93E105D37DD0070775D /* VoiceHack.cpp */,
+				182FF93F105D37DD0070775D /* VoiceHack.h */,
+				1848F58E0FD572E000BBDC1E /* Function.h */,
+				1848F58B0FD572B100BBDC1E /* Generator.h */,
+				1848F5880FD5728D00BBDC1E /* Delay.h */,
+				1848F5860FD5727D00BBDC1E /* Delay.cpp */,
+				1848F5800FD5723100BBDC1E /* Stk.h */,
+				1848F57E0FD5721E00BBDC1E /* Stk.cpp */,
+				1848F5760FD571E500BBDC1E /* Filter.h */,
+				1848F5690FD571C000BBDC1E /* DelayL.cpp */,
+				1848F56A0FD571C000BBDC1E /* Envelope.cpp */,
+				1848F56B0FD571C000BBDC1E /* Noise.cpp */,
+				1848F56C0FD571C000BBDC1E /* OneZero.cpp */,
+				1848F56D0FD571C000BBDC1E /* SineWave.cpp */,
+				1848F5590FD5715B00BBDC1E /* DelayL.h */,
+				1848F55A0FD5715B00BBDC1E /* Envelope.h */,
+				1848F55B0FD5715B00BBDC1E /* Instrmnt.h */,
+				1848F55C0FD5715B00BBDC1E /* Noise.h */,
+				1848F55D0FD5715B00BBDC1E /* OneZero.h */,
+				1848F55E0FD5715B00BBDC1E /* ReedTable.h */,
+				1848F55F0FD5715B00BBDC1E /* Saxofony.h */,
+				1848F5600FD5715B00BBDC1E /* SineWave.h */,
+				1848F5550FD570F200BBDC1E /* Saxofony.cpp */,
+				1848F5560FD570F200BBDC1E /* SKINI.msg */,
+				1848F5510FD570A500BBDC1E /* SaxHack.cpp */,
+				1848F5520FD570A500BBDC1E /* SaxHack.h */,
+			);
+			name = FromSTKHack;
+			sourceTree = "<group>";
+		};
+		1AB674ADFE9D54B511CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8DD76F6C0486A84900D96B5E /* treemusic */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C6859E8C029090F304C91782 /* Documentation */ = {
+			isa = PBXGroup;
+			children = (
+				C6859E8B029090EE04C91782 /* treemusic.1 */,
+			);
+			name = Documentation;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8DD76F620486A84900D96B5E /* treemusic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB923108733DC60010E9CD /* Build configuration list for PBXNativeTarget "treemusic" */;
+			buildPhases = (
+				8DD76F640486A84900D96B5E /* Sources */,
+				8DD76F660486A84900D96B5E /* Frameworks */,
+				8DD76F690486A84900D96B5E /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = treemusic;
+			productInstallPath = "$(HOME)/bin";
+			productName = treemusic;
+			productReference = 8DD76F6C0486A84900D96B5E /* treemusic */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08FB7793FE84155DC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+			};
+			buildConfigurationList = 1DEB923508733DC60010E9CD /* Build configuration list for PBXProject "treemusic" */;
+			compatibilityVersion = "Xcode 2.4";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 08FB7794FE84155DC02AAC07 /* treemusic */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8DD76F620486A84900D96B5E /* treemusic */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8DD76F640486A84900D96B5E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DD76F650486A84900D96B5E /* main.cpp in Sources */,
+				18D81E8E0EB917A000FD870D /* TreeNode.cpp in Sources */,
+				18340D210ECB55C0001EC570 /* handyfuncs.c in Sources */,
+				18C5310C0EDA14F40005033B /* Interpolation.cpp in Sources */,
+				18C5314B0EDA21170005033B /* ParameterList.cpp in Sources */,
+				18340E020EDCE362001EC570 /* TreeSynthesizer.cpp in Sources */,
+				18340E3A0EDCEC62001EC570 /* AudioBuffer.cpp in Sources */,
+				18340E3C0EDCEC62001EC570 /* MonoBuffer16.cpp in Sources */,
+				18340E3E0EDCEC62001EC570 /* StereoBuffer16.cpp in Sources */,
+				18340EBF0EDCEFE5001EC570 /* NoiseBandSynthesizer.cpp in Sources */,
+				CFE7016C0F2FE3060049671D /* ParamOutputSynthesizer.cpp in Sources */,
+				18A27CA00F3E8F0C0013A1BE /* MetaInterpolation.cpp in Sources */,
+				1848F5360FD56C6900BBDC1E /* SaxHackSynthesizer.cpp in Sources */,
+				1848F5530FD570A500BBDC1E /* SaxHack.cpp in Sources */,
+				1848F5570FD570F200BBDC1E /* Saxofony.cpp in Sources */,
+				1848F56E0FD571C000BBDC1E /* DelayL.cpp in Sources */,
+				1848F56F0FD571C000BBDC1E /* Envelope.cpp in Sources */,
+				1848F5700FD571C000BBDC1E /* Noise.cpp in Sources */,
+				1848F5710FD571C000BBDC1E /* OneZero.cpp in Sources */,
+				1848F5720FD571C000BBDC1E /* SineWave.cpp in Sources */,
+				1848F57F0FD5721E00BBDC1E /* Stk.cpp in Sources */,
+				1848F5870FD5727D00BBDC1E /* Delay.cpp in Sources */,
+				182FF940105D37DD0070775D /* VoiceHack.cpp in Sources */,
+				182FF945105D38110070775D /* VoicForm.cpp in Sources */,
+				182FF959105D38990070775D /* FormSwep.cpp in Sources */,
+				182FF95A105D38990070775D /* OnePole.cpp in Sources */,
+				182FF95B105D38990070775D /* SingWave.cpp in Sources */,
+				182FF963105D38D40070775D /* FileLoop.cpp in Sources */,
+				182FF964105D38D40070775D /* Modulate.cpp in Sources */,
+				182FF969105D39240070775D /* FileWvIn.cpp in Sources */,
+				182FF96C105D39590070775D /* FileRead.cpp in Sources */,
+				182FF973105D39980070775D /* Phonemes.cpp in Sources */,
+				182FF97F105D3AB10070775D /* VoiceHackSynthesizer.cpp in Sources */,
+				189A2763109BACF1003C7147 /* BowedSynthesizer.cpp in Sources */,
+				189A276A109BAD8D003C7147 /* Bowed.cpp in Sources */,
+				189A277C109BAE58003C7147 /* ADSR.cpp in Sources */,
+				189A27AB109BB0E4003C7147 /* BiQuad.cpp in Sources */,
+				189A27B2109BB909003C7147 /* BandedWG.cpp in Sources */,
+				189A27B9109BB938003C7147 /* BandedWGSynthesizer.cpp in Sources */,
+				189A27EE109C8626003C7147 /* Shakers.cpp in Sources */,
+				189A27F5109C8649003C7147 /* ShakersSynthesizer.cpp in Sources */,
+				18BA30B910EC5AE000D51824 /* MultiSynthesizer.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB923208733DC60010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INSTALL_PATH = "$(HOME)/bin";
+				PRODUCT_NAME = treemusic;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		1DEB923308733DC60010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+				);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = "$(HOME)/bin";
+				PRODUCT_NAME = treemusic;
+			};
+			name = Release;
+		};
+		1DEB923608733DC60010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PREBINDING = NO;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		1DEB923708733DC60010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PREBINDING = NO;
+				PRODUCT_NAME = "";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB923108733DC60010E9CD /* Build configuration list for PBXNativeTarget "treemusic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB923208733DC60010E9CD /* Debug */,
+				1DEB923308733DC60010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB923508733DC60010E9CD /* Build configuration list for PBXProject "treemusic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB923608733DC60010E9CD /* Debug */,
+				1DEB923708733DC60010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 08FB7793FE84155DC02AAC07 /* Project object */;
+}
