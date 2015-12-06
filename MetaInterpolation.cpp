@@ -12,6 +12,8 @@
 #include "handyfuncs.h"
 #include "TreeNode.h"
 #include <math.h>
+#include <assert.h>
+
 #define kPeriodicMaxFreq 30
 
 MetaInterpolation::MetaInterpolation(Interpolation* target,int bottomLayer, int topLayer,int numTopLayers,TreeNode* owner)

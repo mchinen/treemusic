@@ -10,6 +10,7 @@
 #include "StereoBuffer16.h"
 #include "MonoBuffer16.h"
 #include "handyfuncs.h"
+#include <stdlib.h>
 #include <memory>
 
 const float PI =3.141592;

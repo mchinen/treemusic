@@ -7,9 +7,11 @@
  *
  */
 
+#include <assert.h>
+#include <math.h>
+
 #include "MultiSynthesizer.h"
 #include "ParameterList.h"
-#include <math.h>
 #include  "handyfuncs.h"
 #include "MonoBuffer16.h"
 
