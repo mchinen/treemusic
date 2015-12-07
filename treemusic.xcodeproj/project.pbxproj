@@ -97,6 +97,47 @@
 		18D81E8E0EB917A000FD870D /* TreeNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 18D81E8C0EB917A000FD870D /* TreeNode.cpp */; };
 		8DD76F650486A84900D96B5E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 08FB7796FE84155DC02AAC07 /* main.cpp */; settings = {ATTRIBUTES = (); }; };
 		8DD76F6A0486A84900D96B5E /* treemusic.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = C6859E8B029090EE04C91782 /* treemusic.1 */; };
+		CF267E701C1563C800E79B25 /* ahh.raw in CopyFiles */ = {isa = PBXBuildFile; fileRef = CF267E151C1561C300E79B25 /* ahh.raw */; };
+		CF267E711C1563C800E79B25 /* bassdrum.raw in CopyFiles */ = {isa = PBXBuildFile; fileRef = CF267E161C1561C300E79B25 /* bassdrum.raw */; };
+		CF267E721C1563C800E79B25 /* britestk.raw in CopyFiles */ = {isa = PBXBuildFile; fileRef = CF267E171C1561C300E79B25 /* britestk.raw */; };
+		CF267E731C1563C800E79B25 /* cowbell1.raw in CopyFiles */ = {isa = PBXBuildFile; fileRef = CF267E181C1561C300E79B25 /* cowbell1.raw */; };
+		CF267E741C1563C800E79B25 /* crashcym.raw in CopyFiles */ = {isa = PBXBuildFile; fileRef = CF267E191C1561C300E79B25 /* crashcym.raw */; };
+		CF267E751C1563C800E79B25 /* dope.raw in CopyFiles */ = {isa = PBXBuildFile; fileRef = CF267E1A1C1561C300E79B25 /* dope.raw */; };
+		CF267E761C1563C800E79B25 /* eee.raw in CopyFiles */ = {isa = PBXBuildFile; fileRef = CF267E1B1C1561C300E79B25 /* eee.raw */; };
+		CF267E771C1563C800E79B25 /* fwavblnk.raw in CopyFiles */ = {isa = PBXBuildFile; fileRef = CF267E1C1C1561C300E79B25 /* fwavblnk.raw */; };
+		CF267E781C1563C800E79B25 /* halfwave.raw in CopyFiles */ = {isa = PBXBuildFile; fileRef = CF267E1D1C1561C300E79B25 /* halfwave.raw */; };
+		CF267E791C1563C800E79B25 /* hihatcym.raw in CopyFiles */ = {isa = PBXBuildFile; fileRef = CF267E1E1C1561C300E79B25 /* hihatcym.raw */; };
+		CF267E7A1C1563C800E79B25 /* impuls10.raw in CopyFiles */ = {isa = PBXBuildFile; fileRef = CF267E1F1C1561C300E79B25 /* impuls10.raw */; };
+		CF267E7B1C1563C800E79B25 /* impuls20.raw in CopyFiles */ = {isa = PBXBuildFile; fileRef = CF267E201C1561C300E79B25 /* impuls20.raw */; };
+		CF267E7C1C1563C800E79B25 /* impuls40.raw in CopyFiles */ = {isa = PBXBuildFile; fileRef = CF267E211C1561C300E79B25 /* impuls40.raw */; };
+		CF267E7D1C1563C800E79B25 /* mand1.raw in CopyFiles */ = {isa = PBXBuildFile; fileRef = CF267E251C1561C300E79B25 /* mand1.raw */; };
+		CF267E7E1C1563C800E79B25 /* mand10.raw in CopyFiles */ = {isa = PBXBuildFile; fileRef = CF267E261C1561C300E79B25 /* mand10.raw */; };
+		CF267E7F1C1563C800E79B25 /* mand11.raw in CopyFiles */ = {isa = PBXBuildFile; fileRef = CF267E271C1561C300E79B25 /* mand11.raw */; };
+		CF267E801C1563C800E79B25 /* mand12.raw in CopyFiles */ = {isa = PBXBuildFile; fileRef = CF267E281C1561C300E79B25 /* mand12.raw */; };
+		CF267E811C1563C800E79B25 /* mand2.raw in CopyFiles */ = {isa = PBXBuildFile; fileRef = CF267E291C1561C300E79B25 /* mand2.raw */; };
+		CF267E821C1563C800E79B25 /* mand3.raw in CopyFiles */ = {isa = PBXBuildFile; fileRef = CF267E2A1C1561C300E79B25 /* mand3.raw */; };
+		CF267E831C1563C800E79B25 /* mand4.raw in CopyFiles */ = {isa = PBXBuildFile; fileRef = CF267E2B1C1561C300E79B25 /* mand4.raw */; };
+		CF267E841C1563C800E79B25 /* mand5.raw in CopyFiles */ = {isa = PBXBuildFile; fileRef = CF267E2C1C1561C300E79B25 /* mand5.raw */; };
+		CF267E851C1563C800E79B25 /* mand6.raw in CopyFiles */ = {isa = PBXBuildFile; fileRef = CF267E2D1C1561C300E79B25 /* mand6.raw */; };
+		CF267E861C1563C800E79B25 /* mand7.raw in CopyFiles */ = {isa = PBXBuildFile; fileRef = CF267E2E1C1561C300E79B25 /* mand7.raw */; };
+		CF267E871C1563C800E79B25 /* mand8.raw in CopyFiles */ = {isa = PBXBuildFile; fileRef = CF267E2F1C1561C300E79B25 /* mand8.raw */; };
+		CF267E881C1563C800E79B25 /* mand9.raw in CopyFiles */ = {isa = PBXBuildFile; fileRef = CF267E301C1561C300E79B25 /* mand9.raw */; };
+		CF267E891C1563C800E79B25 /* mandpluk.raw in CopyFiles */ = {isa = PBXBuildFile; fileRef = CF267E311C1561C300E79B25 /* mandpluk.raw */; };
+		CF267E8A1C1563C800E79B25 /* marmstk1.raw in CopyFiles */ = {isa = PBXBuildFile; fileRef = CF267E321C1561C300E79B25 /* marmstk1.raw */; };
+		CF267E8B1C1563C800E79B25 /* ooo.raw in CopyFiles */ = {isa = PBXBuildFile; fileRef = CF267E331C1561C300E79B25 /* ooo.raw */; };
+		CF267E8C1C1563C800E79B25 /* peksblnk.raw in CopyFiles */ = {isa = PBXBuildFile; fileRef = CF267E341C1561C300E79B25 /* peksblnk.raw */; };
+		CF267E8D1C1563C800E79B25 /* ppksblnk.raw in CopyFiles */ = {isa = PBXBuildFile; fileRef = CF267E351C1561C300E79B25 /* ppksblnk.raw */; };
+		CF267E8E1C1563C800E79B25 /* ridecymb.raw in CopyFiles */ = {isa = PBXBuildFile; fileRef = CF267E361C1561C300E79B25 /* ridecymb.raw */; };
+		CF267E8F1C1563C800E79B25 /* silence.raw in CopyFiles */ = {isa = PBXBuildFile; fileRef = CF267E371C1561C300E79B25 /* silence.raw */; };
+		CF267E901C1563C800E79B25 /* sineblnk.raw in CopyFiles */ = {isa = PBXBuildFile; fileRef = CF267E391C1561C300E79B25 /* sineblnk.raw */; };
+		CF267E911C1563C800E79B25 /* sinewave.raw in CopyFiles */ = {isa = PBXBuildFile; fileRef = CF267E3A1C1561C300E79B25 /* sinewave.raw */; };
+		CF267E921C1563C800E79B25 /* snardrum.raw in CopyFiles */ = {isa = PBXBuildFile; fileRef = CF267E3B1C1561C300E79B25 /* snardrum.raw */; };
+		CF267E931C1563C800E79B25 /* snglpeak.raw in CopyFiles */ = {isa = PBXBuildFile; fileRef = CF267E3C1C1561C300E79B25 /* snglpeak.raw */; };
+		CF267E941C1563C800E79B25 /* tambourn.raw in CopyFiles */ = {isa = PBXBuildFile; fileRef = CF267E3D1C1561C300E79B25 /* tambourn.raw */; };
+		CF267E951C1563C800E79B25 /* tomhidrm.raw in CopyFiles */ = {isa = PBXBuildFile; fileRef = CF267E3E1C1561C300E79B25 /* tomhidrm.raw */; };
+		CF267E961C1563C800E79B25 /* tomlowdr.raw in CopyFiles */ = {isa = PBXBuildFile; fileRef = CF267E3F1C1561C300E79B25 /* tomlowdr.raw */; };
+		CF267E971C1563C800E79B25 /* tommiddr.raw in CopyFiles */ = {isa = PBXBuildFile; fileRef = CF267E401C1561C300E79B25 /* tommiddr.raw */; };
+		CF267E981C1563C800E79B25 /* twopeaks.raw in CopyFiles */ = {isa = PBXBuildFile; fileRef = CF267E411C1561C300E79B25 /* twopeaks.raw */; };
 		CFE7016C0F2FE3060049671D /* ParamOutputSynthesizer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CFE7FF980F2FE3060049671D /* ParamOutputSynthesizer.cpp */; };
 		CFE7016D0F2FE3060049671D /* ParamOutputSynthesizer.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = CFE7FF990F2FE3060049671D /* ParamOutputSynthesizer.h */; };
 /* End PBXBuildFile section */
@@ -160,6 +201,56 @@
 				18BA30B810EC5AE000D51824 /* MultiSynthesizer.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 1;
+		};
+		CF267E6F1C1563AA00E79B25 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = rawwaves;
+			dstSubfolderSpec = 7;
+			files = (
+				CF267E701C1563C800E79B25 /* ahh.raw in CopyFiles */,
+				CF267E711C1563C800E79B25 /* bassdrum.raw in CopyFiles */,
+				CF267E721C1563C800E79B25 /* britestk.raw in CopyFiles */,
+				CF267E731C1563C800E79B25 /* cowbell1.raw in CopyFiles */,
+				CF267E741C1563C800E79B25 /* crashcym.raw in CopyFiles */,
+				CF267E751C1563C800E79B25 /* dope.raw in CopyFiles */,
+				CF267E761C1563C800E79B25 /* eee.raw in CopyFiles */,
+				CF267E771C1563C800E79B25 /* fwavblnk.raw in CopyFiles */,
+				CF267E781C1563C800E79B25 /* halfwave.raw in CopyFiles */,
+				CF267E791C1563C800E79B25 /* hihatcym.raw in CopyFiles */,
+				CF267E7A1C1563C800E79B25 /* impuls10.raw in CopyFiles */,
+				CF267E7B1C1563C800E79B25 /* impuls20.raw in CopyFiles */,
+				CF267E7C1C1563C800E79B25 /* impuls40.raw in CopyFiles */,
+				CF267E7D1C1563C800E79B25 /* mand1.raw in CopyFiles */,
+				CF267E7E1C1563C800E79B25 /* mand10.raw in CopyFiles */,
+				CF267E7F1C1563C800E79B25 /* mand11.raw in CopyFiles */,
+				CF267E801C1563C800E79B25 /* mand12.raw in CopyFiles */,
+				CF267E811C1563C800E79B25 /* mand2.raw in CopyFiles */,
+				CF267E821C1563C800E79B25 /* mand3.raw in CopyFiles */,
+				CF267E831C1563C800E79B25 /* mand4.raw in CopyFiles */,
+				CF267E841C1563C800E79B25 /* mand5.raw in CopyFiles */,
+				CF267E851C1563C800E79B25 /* mand6.raw in CopyFiles */,
+				CF267E861C1563C800E79B25 /* mand7.raw in CopyFiles */,
+				CF267E871C1563C800E79B25 /* mand8.raw in CopyFiles */,
+				CF267E881C1563C800E79B25 /* mand9.raw in CopyFiles */,
+				CF267E891C1563C800E79B25 /* mandpluk.raw in CopyFiles */,
+				CF267E8A1C1563C800E79B25 /* marmstk1.raw in CopyFiles */,
+				CF267E8B1C1563C800E79B25 /* ooo.raw in CopyFiles */,
+				CF267E8C1C1563C800E79B25 /* peksblnk.raw in CopyFiles */,
+				CF267E8D1C1563C800E79B25 /* ppksblnk.raw in CopyFiles */,
+				CF267E8E1C1563C800E79B25 /* ridecymb.raw in CopyFiles */,
+				CF267E8F1C1563C800E79B25 /* silence.raw in CopyFiles */,
+				CF267E901C1563C800E79B25 /* sineblnk.raw in CopyFiles */,
+				CF267E911C1563C800E79B25 /* sinewave.raw in CopyFiles */,
+				CF267E921C1563C800E79B25 /* snardrum.raw in CopyFiles */,
+				CF267E931C1563C800E79B25 /* snglpeak.raw in CopyFiles */,
+				CF267E941C1563C800E79B25 /* tambourn.raw in CopyFiles */,
+				CF267E951C1563C800E79B25 /* tomhidrm.raw in CopyFiles */,
+				CF267E961C1563C800E79B25 /* tomlowdr.raw in CopyFiles */,
+				CF267E971C1563C800E79B25 /* tommiddr.raw in CopyFiles */,
+				CF267E981C1563C800E79B25 /* twopeaks.raw in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
@@ -255,6 +346,47 @@
 		18D81E8C0EB917A000FD870D /* TreeNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TreeNode.cpp; sourceTree = "<group>"; };
 		8DD76F6C0486A84900D96B5E /* treemusic */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = treemusic; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6859E8B029090EE04C91782 /* treemusic.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = treemusic.1; sourceTree = "<group>"; };
+		CF267E151C1561C300E79B25 /* ahh.raw */ = {isa = PBXFileReference; lastKnownFileType = file; path = ahh.raw; sourceTree = "<group>"; };
+		CF267E161C1561C300E79B25 /* bassdrum.raw */ = {isa = PBXFileReference; lastKnownFileType = file; path = bassdrum.raw; sourceTree = "<group>"; };
+		CF267E171C1561C300E79B25 /* britestk.raw */ = {isa = PBXFileReference; lastKnownFileType = file; path = britestk.raw; sourceTree = "<group>"; };
+		CF267E181C1561C300E79B25 /* cowbell1.raw */ = {isa = PBXFileReference; lastKnownFileType = file; path = cowbell1.raw; sourceTree = "<group>"; };
+		CF267E191C1561C300E79B25 /* crashcym.raw */ = {isa = PBXFileReference; lastKnownFileType = file; path = crashcym.raw; sourceTree = "<group>"; };
+		CF267E1A1C1561C300E79B25 /* dope.raw */ = {isa = PBXFileReference; lastKnownFileType = file; path = dope.raw; sourceTree = "<group>"; };
+		CF267E1B1C1561C300E79B25 /* eee.raw */ = {isa = PBXFileReference; lastKnownFileType = file; path = eee.raw; sourceTree = "<group>"; };
+		CF267E1C1C1561C300E79B25 /* fwavblnk.raw */ = {isa = PBXFileReference; lastKnownFileType = file; path = fwavblnk.raw; sourceTree = "<group>"; };
+		CF267E1D1C1561C300E79B25 /* halfwave.raw */ = {isa = PBXFileReference; lastKnownFileType = file; path = halfwave.raw; sourceTree = "<group>"; };
+		CF267E1E1C1561C300E79B25 /* hihatcym.raw */ = {isa = PBXFileReference; lastKnownFileType = file; path = hihatcym.raw; sourceTree = "<group>"; };
+		CF267E1F1C1561C300E79B25 /* impuls10.raw */ = {isa = PBXFileReference; lastKnownFileType = file; path = impuls10.raw; sourceTree = "<group>"; };
+		CF267E201C1561C300E79B25 /* impuls20.raw */ = {isa = PBXFileReference; lastKnownFileType = file; path = impuls20.raw; sourceTree = "<group>"; };
+		CF267E211C1561C300E79B25 /* impuls40.raw */ = {isa = PBXFileReference; lastKnownFileType = file; path = impuls40.raw; sourceTree = "<group>"; };
+		CF267E251C1561C300E79B25 /* mand1.raw */ = {isa = PBXFileReference; lastKnownFileType = file; path = mand1.raw; sourceTree = "<group>"; };
+		CF267E261C1561C300E79B25 /* mand10.raw */ = {isa = PBXFileReference; lastKnownFileType = file; path = mand10.raw; sourceTree = "<group>"; };
+		CF267E271C1561C300E79B25 /* mand11.raw */ = {isa = PBXFileReference; lastKnownFileType = file; path = mand11.raw; sourceTree = "<group>"; };
+		CF267E281C1561C300E79B25 /* mand12.raw */ = {isa = PBXFileReference; lastKnownFileType = file; path = mand12.raw; sourceTree = "<group>"; };
+		CF267E291C1561C300E79B25 /* mand2.raw */ = {isa = PBXFileReference; lastKnownFileType = file; path = mand2.raw; sourceTree = "<group>"; };
+		CF267E2A1C1561C300E79B25 /* mand3.raw */ = {isa = PBXFileReference; lastKnownFileType = file; path = mand3.raw; sourceTree = "<group>"; };
+		CF267E2B1C1561C300E79B25 /* mand4.raw */ = {isa = PBXFileReference; lastKnownFileType = file; path = mand4.raw; sourceTree = "<group>"; };
+		CF267E2C1C1561C300E79B25 /* mand5.raw */ = {isa = PBXFileReference; lastKnownFileType = file; path = mand5.raw; sourceTree = "<group>"; };
+		CF267E2D1C1561C300E79B25 /* mand6.raw */ = {isa = PBXFileReference; lastKnownFileType = file; path = mand6.raw; sourceTree = "<group>"; };
+		CF267E2E1C1561C300E79B25 /* mand7.raw */ = {isa = PBXFileReference; lastKnownFileType = file; path = mand7.raw; sourceTree = "<group>"; };
+		CF267E2F1C1561C300E79B25 /* mand8.raw */ = {isa = PBXFileReference; lastKnownFileType = file; path = mand8.raw; sourceTree = "<group>"; };
+		CF267E301C1561C300E79B25 /* mand9.raw */ = {isa = PBXFileReference; lastKnownFileType = file; path = mand9.raw; sourceTree = "<group>"; };
+		CF267E311C1561C300E79B25 /* mandpluk.raw */ = {isa = PBXFileReference; lastKnownFileType = file; path = mandpluk.raw; sourceTree = "<group>"; };
+		CF267E321C1561C300E79B25 /* marmstk1.raw */ = {isa = PBXFileReference; lastKnownFileType = file; path = marmstk1.raw; sourceTree = "<group>"; };
+		CF267E331C1561C300E79B25 /* ooo.raw */ = {isa = PBXFileReference; lastKnownFileType = file; path = ooo.raw; sourceTree = "<group>"; };
+		CF267E341C1561C300E79B25 /* peksblnk.raw */ = {isa = PBXFileReference; lastKnownFileType = file; path = peksblnk.raw; sourceTree = "<group>"; };
+		CF267E351C1561C300E79B25 /* ppksblnk.raw */ = {isa = PBXFileReference; lastKnownFileType = file; path = ppksblnk.raw; sourceTree = "<group>"; };
+		CF267E361C1561C300E79B25 /* ridecymb.raw */ = {isa = PBXFileReference; lastKnownFileType = file; path = ridecymb.raw; sourceTree = "<group>"; };
+		CF267E371C1561C300E79B25 /* silence.raw */ = {isa = PBXFileReference; lastKnownFileType = file; path = silence.raw; sourceTree = "<group>"; };
+		CF267E391C1561C300E79B25 /* sineblnk.raw */ = {isa = PBXFileReference; lastKnownFileType = file; path = sineblnk.raw; sourceTree = "<group>"; };
+		CF267E3A1C1561C300E79B25 /* sinewave.raw */ = {isa = PBXFileReference; lastKnownFileType = file; path = sinewave.raw; sourceTree = "<group>"; };
+		CF267E3B1C1561C300E79B25 /* snardrum.raw */ = {isa = PBXFileReference; lastKnownFileType = file; path = snardrum.raw; sourceTree = "<group>"; };
+		CF267E3C1C1561C300E79B25 /* snglpeak.raw */ = {isa = PBXFileReference; lastKnownFileType = file; path = snglpeak.raw; sourceTree = "<group>"; };
+		CF267E3D1C1561C300E79B25 /* tambourn.raw */ = {isa = PBXFileReference; lastKnownFileType = file; path = tambourn.raw; sourceTree = "<group>"; };
+		CF267E3E1C1561C300E79B25 /* tomhidrm.raw */ = {isa = PBXFileReference; lastKnownFileType = file; path = tomhidrm.raw; sourceTree = "<group>"; };
+		CF267E3F1C1561C300E79B25 /* tomlowdr.raw */ = {isa = PBXFileReference; lastKnownFileType = file; path = tomlowdr.raw; sourceTree = "<group>"; };
+		CF267E401C1561C300E79B25 /* tommiddr.raw */ = {isa = PBXFileReference; lastKnownFileType = file; path = tommiddr.raw; sourceTree = "<group>"; };
+		CF267E411C1561C300E79B25 /* twopeaks.raw */ = {isa = PBXFileReference; lastKnownFileType = file; path = twopeaks.raw; sourceTree = "<group>"; };
 		CFE7FF980F2FE3060049671D /* ParamOutputSynthesizer.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = ParamOutputSynthesizer.cpp; sourceTree = "<group>"; };
 		CFE7FF990F2FE3060049671D /* ParamOutputSynthesizer.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = ParamOutputSynthesizer.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -273,6 +405,7 @@
 		08FB7794FE84155DC02AAC07 /* treemusic */ = {
 			isa = PBXGroup;
 			children = (
+				CF267E131C1561A200E79B25 /* files */,
 				08FB7795FE84155DC02AAC07 /* Source */,
 				C6859E8C029090F304C91782 /* Documentation */,
 				1AB674ADFE9D54B511CA2CBB /* Products */,
@@ -418,6 +551,62 @@
 			name = Documentation;
 			sourceTree = "<group>";
 		};
+		CF267E131C1561A200E79B25 /* files */ = {
+			isa = PBXGroup;
+			children = (
+				CF267E141C1561C300E79B25 /* rawwaves */,
+			);
+			name = files;
+			sourceTree = "<group>";
+		};
+		CF267E141C1561C300E79B25 /* rawwaves */ = {
+			isa = PBXGroup;
+			children = (
+				CF267E151C1561C300E79B25 /* ahh.raw */,
+				CF267E161C1561C300E79B25 /* bassdrum.raw */,
+				CF267E171C1561C300E79B25 /* britestk.raw */,
+				CF267E181C1561C300E79B25 /* cowbell1.raw */,
+				CF267E191C1561C300E79B25 /* crashcym.raw */,
+				CF267E1A1C1561C300E79B25 /* dope.raw */,
+				CF267E1B1C1561C300E79B25 /* eee.raw */,
+				CF267E1C1C1561C300E79B25 /* fwavblnk.raw */,
+				CF267E1D1C1561C300E79B25 /* halfwave.raw */,
+				CF267E1E1C1561C300E79B25 /* hihatcym.raw */,
+				CF267E1F1C1561C300E79B25 /* impuls10.raw */,
+				CF267E201C1561C300E79B25 /* impuls20.raw */,
+				CF267E211C1561C300E79B25 /* impuls40.raw */,
+				CF267E251C1561C300E79B25 /* mand1.raw */,
+				CF267E261C1561C300E79B25 /* mand10.raw */,
+				CF267E271C1561C300E79B25 /* mand11.raw */,
+				CF267E281C1561C300E79B25 /* mand12.raw */,
+				CF267E291C1561C300E79B25 /* mand2.raw */,
+				CF267E2A1C1561C300E79B25 /* mand3.raw */,
+				CF267E2B1C1561C300E79B25 /* mand4.raw */,
+				CF267E2C1C1561C300E79B25 /* mand5.raw */,
+				CF267E2D1C1561C300E79B25 /* mand6.raw */,
+				CF267E2E1C1561C300E79B25 /* mand7.raw */,
+				CF267E2F1C1561C300E79B25 /* mand8.raw */,
+				CF267E301C1561C300E79B25 /* mand9.raw */,
+				CF267E311C1561C300E79B25 /* mandpluk.raw */,
+				CF267E321C1561C300E79B25 /* marmstk1.raw */,
+				CF267E331C1561C300E79B25 /* ooo.raw */,
+				CF267E341C1561C300E79B25 /* peksblnk.raw */,
+				CF267E351C1561C300E79B25 /* ppksblnk.raw */,
+				CF267E361C1561C300E79B25 /* ridecymb.raw */,
+				CF267E371C1561C300E79B25 /* silence.raw */,
+				CF267E391C1561C300E79B25 /* sineblnk.raw */,
+				CF267E3A1C1561C300E79B25 /* sinewave.raw */,
+				CF267E3B1C1561C300E79B25 /* snardrum.raw */,
+				CF267E3C1C1561C300E79B25 /* snglpeak.raw */,
+				CF267E3D1C1561C300E79B25 /* tambourn.raw */,
+				CF267E3E1C1561C300E79B25 /* tomhidrm.raw */,
+				CF267E3F1C1561C300E79B25 /* tomlowdr.raw */,
+				CF267E401C1561C300E79B25 /* tommiddr.raw */,
+				CF267E411C1561C300E79B25 /* twopeaks.raw */,
+			);
+			path = rawwaves;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -428,6 +617,7 @@
 				8DD76F640486A84900D96B5E /* Sources */,
 				8DD76F660486A84900D96B5E /* Frameworks */,
 				8DD76F690486A84900D96B5E /* CopyFiles */,
+				CF267E6F1C1563AA00E79B25 /* CopyFiles */,
 			);
 			buildRules = (
 			);

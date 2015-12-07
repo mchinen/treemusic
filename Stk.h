@@ -510,7 +510,7 @@ const unsigned int RT_BUFFER_SIZE = 512;
 // move the rawwaves directory to a different location in your file
 // system, you will need to set this path definition appropriately.
 #if !defined(RAWWAVE_PATH)
-  #define RAWWAVE_PATH "../../rawwaves/"
+  #define RAWWAVE_PATH "rawwaves/"
 #endif
 
 const StkFloat PI           = 3.14159265358979;
