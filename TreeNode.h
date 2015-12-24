@@ -88,6 +88,18 @@ typedef struct {
 
 } ChildLayer;
 
+typedef struct {
+    long int lastSampleWritten = -1;
+    long int totalSamples = 100;
+    int numNodesProcessed =0;
+    int percentComplete =0;
+    std::vector<double> instantParams;
+    std::vector<double> beginParams;
+    bool instantParamsCleared = true;
+    double totalTime = 10.0;
+    
+} TreeMetaData;
+
 class TreeNode
 {
 public:
@@ -102,7 +114,7 @@ public:
    
    void Generate(double startTime=0.0, double duration=100.0, std::vector<ParameterList*> *parameters=NULL,int depth=0,  std::vector<TreeNode*> *activeNodes=NULL);
    
-   void Synthesize(TreeSynthesizer* synth, ParameterList* parameters, int layerNumber=0, std::vector<TreeNode*> *activeNodes=NULL);
+   void Synthesize(TreeSynthesizer* synth, ParameterList* parameters, int layerNumber=0, std::vector<TreeNode*> *activeNodes=NULL, TreeMetaData *meta=NULL);
    
    //to be called from root:
    void PrintFile(const char *fname, int stime);

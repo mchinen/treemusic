@@ -46,6 +46,11 @@ Interpolation* Interpolation::SimilarClone(int bottomLayer, int topLayer,int num
    return similarClone;
 }
 
+typedef struct {
+   std::vector<double> instantParams;
+   bool instantParamsCleared = true;
+} InterpolationMetaData;
+
 //at start time it should retun 1.0 at end time mEndCoef
 //the second parameter is for recursive calls since this uses incompatable static variables
 double Interpolation::ValueAtTime(double time)
@@ -53,10 +58,14 @@ double Interpolation::ValueAtTime(double time)
    double cursor =mymin(mymax(0.0,time-mStartTime)/mDuration,1.0);
    double phase;
    double ret;
-   
+    
+   __thread static InterpolationMetaData *meta;
+    if (!meta) {
+        meta = new InterpolationMetaData; /*TODO:leak*/
+    }
    //get the list of our local parameters and copy them.
-    static std::vector<double> instantParams;
-   static bool instantParamsCleared = true;
+    std::vector<double> &instantParams = meta->instantParams;
+   bool &instantParamsCleared = meta->instantParamsCleared;
    
    if(instantParamsCleared)
    {

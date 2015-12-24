@@ -234,21 +234,24 @@ void TreeNode::Generate(double startTime, double duration, std::vector<Parameter
 }
 
 //only leaves do the actual synthesizing - other nodes just accumulate parameter coefficients and add to the active list.
-void TreeNode::Synthesize(TreeSynthesizer* synth, ParameterList* parameters, int layerNumber, std::vector<TreeNode*> *activeNodes)
+void TreeNode::Synthesize(TreeSynthesizer* synth, ParameterList* parameters, int layerNumber, std::vector<TreeNode*> *activeNodes, TreeMetaData *meta)
 {
+    if (!meta) {
+        meta = new TreeMetaData; /*TODO: leaking */
+    }
    //if we reached a leaf, then it's time to synthesize.
-   static long int lastSampleWritten = -1;
-   static long int totalSamples = 100;
-   static int numNodesProcessed =0;
-   static int percentComplete =0;
-	//active nodes starts off null.  the root should init it.
-	bool root = activeNodes==NULL;
-   static double totalTime = 10.0;
+   long int & lastSampleWritten = meta->lastSampleWritten;
+   long int & totalSamples = meta->totalSamples;
+   int & numNodesProcessed = meta->numNodesProcessed;
+   int & percentComplete = meta->percentComplete;
+   //active nodes starts off null.  the root should init it.
+   bool root = activeNodes==NULL;
+   double & totalTime = meta->totalTime;
 //   static float startFreq;
    
-   static std::vector<double> instantParams;
-   static std::vector<double> beginParams;
-   static bool instantParamsCleared = true;
+   std::vector<double> & instantParams = meta->instantParams;
+   std::vector<double> & beginParams = meta->beginParams;
+   bool & instantParamsCleared = meta->instantParamsCleared;
    
 	if(root)
    {
@@ -262,7 +265,7 @@ void TreeNode::Synthesize(TreeSynthesizer* synth, ParameterList* parameters, int
       instantParams.clear();
       beginParams.clear();
       instantParamsCleared=true;
-      ResetParameters();
+      ResetParameters(); 
    }  
    
    //attach all meta interps.
@@ -297,8 +300,8 @@ void TreeNode::Synthesize(TreeSynthesizer* synth, ParameterList* parameters, int
                   &&    mChildLayers[i].left->mTopLayer<=layerNumber))
                   
          {
-            mChildLayers[i].left->Synthesize(synth,parameters,layerNumber,activeNodes);
-            mChildLayers[i].right->Synthesize(synth,parameters,layerNumber,activeNodes);
+            mChildLayers[i].left->Synthesize(synth,parameters,layerNumber,activeNodes, meta);
+            mChildLayers[i].right->Synthesize(synth,parameters,layerNumber,activeNodes, meta);
             
             //get out - we only synthesize one layer at a time.
             isLeaf=false;

@@ -2,6 +2,8 @@
 #include "TreeNode.h"
 #include <time.h>
 #include <stdio.h>
+#include <thread>
+
 #include "ParameterList.h"
 #include "StereoBuffer16.h"
 #include "MonoBuffer16.h"
@@ -104,99 +106,114 @@ enum Parameter
    mix->Create((duration+4)*44100);
    
    int numLayers = tree->GetMaxLayerNum();
-   char layerfilename[20];
-   char paramfilename[20];
-   strcpy(layerfilename,"layerXX.wav");
-   strcpy(paramfilename,"layerXX.wav");
 
+    
+    std::vector<std::thread> threads;
+    std::vector<TreeSynthesizer*> synths;
+    
    for(int i=0;i<numLayers+1;i++)
    {
-     
-   
-      params.ResetCoefficients();
-
-/*for noise band*/
-/*      
-      params.SetParameter(eCenterFrequency,startFreq,startFreq/spacing,startFreq*spacing);
-      startFreq=startFreq*(coinflip()?1.25:(1.25/1.0592));
-*/      
-      MonoBuffer16* buf;
-      TreeSynthesizer* synth;
-      synth = new MultiSynthesizer(duration);
-      /*
-      switch(i)
-      {
-         case 0:
-         case 13:
-         case 5:
-            synth = new NoiseBandSynthesizer(duration);
-            break;
-         case 10:
-         case 4:
-         case 2:
-            synth = new ShakersSynthesizer(duration);
-            break;
-         case 6:
-         case 3:
-         case 8:
-            synth = new BowedSynthesizer(duration);
-            break;
-         case 9:
-         case 7:
-         case 11:
-            synth = new VoiceHackSynthesizer(duration);
-            break;
-         case 12:
-         case 1:
-         case 14:
-            synth = new SaxHackSynthesizer(duration);
-            break;
-         default:
-            synth = new NoiseBandSynthesizer(duration);
-            break;
-      }
-      */
-
-      //TreeSynthesizer* synth = new NoiseBandSynthesizer(duration);
-      //TreeSynthesizer* synth = new SaxHackSynthesizer(duration);
-      //TreeSynthesizer* synth = new VoiceHackSynthesizer(duration);
-      //TreeSynthesizer* synth = new BowedSynthesizer(duration);
-      //TreeSynthesizer* synth = new BandedWGSynthesizer(duration);
-      //TreeSynthesizer* synth = new ShakersSynthesizer(duration);
-
-  //    for(int j=1;j<2/*params.GetNumParameters()*/;j++)
-//      {
-//         ParamOutputSynthesizer* paramOutput = new ParamOutputSynthesizer(duration);
-//         paramOutput->SetParameter((Parameter)j,params.GetMinValue((Parameter)j),params.GetMaxValue((Parameter)j));
-//         params.ResetCoefficients();
-//         
-//         tree->Synthesize(paramOutput,&params, i);
-//         buf=(MonoBuffer16*)paramOutput->GetBuffer();
-//         buf->Normalize(-3.0);
-//         
-//         strcpy(paramfilename,"layerX, paramX.wav");
-//         paramfilename[5]=i+'1';
-//       
-//         paramfilename[13]=j+'1';
-//         buf->WriteWave(paramfilename ,0,1.0);
-//
-//         delete paramOutput;
-//      }
-      
-      
-      tree->Synthesize(synth,&params, i);
-      buf=(MonoBuffer16*)synth->GetBuffer();
-      //layer zero and layer numLayer-1 are the most similar so make sure to put them around the back.
-      printf("buf %i peak = %f",i,((MonoBuffer16*)synth->GetBuffer())->GetPeak());
-     // buf->Normalize(-3.0);
-      buf->Normalize(0.0);
-      mix->Mix(buf,1.0*44100,1.0,((i==0?numLayers-1:(i-1))+0.5)/((float)numLayers));
-      
-      layerfilename[5]=(i/10)+'0';
-      layerfilename[6]=(i%10)+'0';
-      buf->WriteWave(layerfilename,0,1.0);
-      delete synth;
+       
+      threads.push_back(std::thread([&, i](){
+          char layerfilename[20];
+          char paramfilename[20];
+          strcpy(layerfilename,"layerXX.wav");
+          strcpy(paramfilename,"layerXX.wav");
+          ParameterList *copyParams = params.Clone();
+          copyParams->ResetCoefficients();
+          
+          /*for noise band*/
+          /*
+           copyParams.SetParameter(eCenterFrequency,startFreq,startFreq/spacing,startFreq*spacing);
+           startFreq=startFreq*(coinflip()?1.25:(1.25/1.0592));
+           */
+          MonoBuffer16* buf;
+          TreeSynthesizer* synth;
+          synth = new MultiSynthesizer(duration);
+          synths.push_back(synth);
+          /*
+           switch(i)
+           {
+           case 0:
+           case 13:
+           case 5:
+           synth = new NoiseBandSynthesizer(duration);
+           break;
+           case 10:
+           case 4:
+           case 2:
+           synth = new ShakersSynthesizer(duration);
+           break;
+           case 6:
+           case 3:
+           case 8:
+           synth = new BowedSynthesizer(duration);
+           break;
+           case 9:
+           case 7:
+           case 11:
+           synth = new VoiceHackSynthesizer(duration);
+           break;
+           case 12:
+           case 1:
+           case 14:
+           synth = new SaxHackSynthesizer(duration);
+           break;
+           default:
+           synth = new NoiseBandSynthesizer(duration);
+           break;
+           }
+           */
+          
+          //TreeSynthesizer* synth = new NoiseBandSynthesizer(duration);
+          //TreeSynthesizer* synth = new SaxHackSynthesizer(duration);
+          //TreeSynthesizer* synth = new VoiceHackSynthesizer(duration);
+          //TreeSynthesizer* synth = new BowedSynthesizer(duration);
+          //TreeSynthesizer* synth = new BandedWGSynthesizer(duration);
+          //TreeSynthesizer* synth = new ShakersSynthesizer(duration);
+          
+          //    for(int j=1;j<2/*copyParams.GetNumParameters()*/;j++)
+          //      {
+          //         ParamOutputSynthesizer* paramOutput = new ParamOutputSynthesizer(duration);
+          //         paramOutput->SetParameter((Parameter)j,copyParams.GetMinValue((Parameter)j),copyParams.GetMaxValue((Parameter)j));
+          //         copyParams.ResetCoefficients();
+          //
+          //         tree->Synthesize(paramOutput,&copyParams, i);
+          //         buf=(MonoBuffer16*)paramOutput->GetBuffer();
+          //         buf->Normalize(-3.0);
+          //
+          //         strcpy(paramfilename,"layerX, paramX.wav");
+          //         paramfilename[5]=i+'1';
+          //
+          //         paramfilename[13]=j+'1';
+          //         buf->WriteWave(paramfilename ,0,1.0);
+          //
+          //         delete paramOutput;
+          //      }
+          
+error          /* Need copy of tree for thread since it writes things!! */
+          tree->Synthesize(synth,copyParams, i);
+          buf=(MonoBuffer16*)synth->GetBuffer();
+          //layer zero and layer numLayer-1 are the most similar so make sure to put them around the back.
+          printf("buf %i peak = %f",i,((MonoBuffer16*)synth->GetBuffer())->GetPeak());
+          // buf->Normalize(-3.0);
+          buf->Normalize(0.0);
+          
+          layerfilename[5]=(i/10)+'0';
+          layerfilename[6]=(i%10)+'0';
+          buf->WriteWave(layerfilename,0,1.0);
+          delete copyParams;
+      }));
+       //threads[i].join();
    }
+    int i = 0;
+    std::for_each(threads.begin(), threads.end(), [&](std::thread &t) {
+        t.join();
+        mix->Mix((MonoBuffer16*)synths[i]->GetBuffer(),1.0*44100,1.0,((i==0?numLayers-1:(i-1))+0.5)/((float)numLayers));
+        delete synths[i];
+        i++;
+    });
+    
    mix->Normalize(0.0);
    mix->WriteWave("TreeMusic.wav",0,1.0);
    
