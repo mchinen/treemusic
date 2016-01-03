@@ -59,6 +59,7 @@ class Interpolation
 public:
    Interpolation(int bottomLayer, int topLayer,int numTopLayers,TreeNode* owner);
 
+   Interpolation *Clone(TreeNode *owner);
    Interpolation* SimilarClone(int bottomLayer, int topLayer,int numTopLayers,TreeNode* owner);
 
 

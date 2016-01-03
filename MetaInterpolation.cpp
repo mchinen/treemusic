@@ -22,6 +22,23 @@ MetaInterpolation::MetaInterpolation(Interpolation* target,int bottomLayer, int 
    mTarget=target;
 }
 
+MetaInterpolation *MetaInterpolation::Clone(Interpolation *target, TreeNode *owner) {
+   MetaInterpolation* clone = new MetaInterpolation(target, 0, 0, 0,owner);
+
+   clone->mInterpParams = mInterpParams;
+   clone->mParam =mParam;
+   clone->mType=mType;
+   clone->mEndCoef = mEndCoef;
+   clone->mStartTime = mStartTime;
+   clone->mDuration = mDuration;
+   clone->mEndCoef = mEndCoef;
+   clone->interpTypeVariable = interpTypeVariable;
+   clone->mDoesConcatenate = mDoesConcatenate;
+
+   return clone;
+
+}
+
 void MetaInterpolation::Randomize(double startTime, double duration,std::vector<TreeNode*> *activeNodes, std::vector<ParameterList*> *parameters, int layerNum,  int topLayer, int numControlledLayers, int param)
 {
 

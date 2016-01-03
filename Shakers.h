@@ -97,6 +97,7 @@ class Shakers : public Instrmnt
   StkFloat wuter_tick( void );
   StkFloat tbamb_tick( void );
   StkFloat ratchet_tick( void );
+    
 
   int instType_;
   int ratchetPos_, lastRatchetPos_;
@@ -123,7 +124,8 @@ class Shakers : public Instrmnt
   StkFloat defObjs_[NUM_INSTR];
   StkFloat defDecays_[NUM_INSTR];
   StkFloat decayScale_[NUM_INSTR];
-
+    
+  int mWhich;
 };
 
 } // stk namespace

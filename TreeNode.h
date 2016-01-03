@@ -73,6 +73,7 @@ important places, only one or two things are changed.  At a high enough height, 
 #include <stdio.h>
 #include <ctime>
 #include <vector>
+#include <map>
 
 #include "Interpolation.h"
 class TreeNode;
@@ -106,6 +107,8 @@ public:
    //initialize a tree at a layer number.
    TreeNode(TreeNode* parent, int layerNumber=0);   
    virtual ~TreeNode();
+    
+   TreeNode *Clone(TreeNode *parent=NULL, std::map<TreeNode*, TreeNode*> *activeMap=NULL);
    
    //finds a peer (same depth) that is probably close but possibly in a diff. layer.
    TreeNode* GetNearbyPeer();
@@ -162,7 +165,6 @@ private:
    int         mTopLayer;//the next layer this node would create
    
    bool        mIsRefNode;
-   TreeNode*    mReferant;
 };
 
 

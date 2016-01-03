@@ -115,7 +115,7 @@ private:
    //if our interpolation is meta-interpolated by another interpolation,
    //we need to keep track of what the smallest and largest interpolated values
    //are AT EACH LAYER, to keep us within boundaries.
-   std::map<const int, std::vector<double> > mLayerCoefs;
+   std::map<int, std::vector<double> > mLayerCoefs;
    
 };
 

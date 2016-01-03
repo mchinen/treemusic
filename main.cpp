@@ -92,7 +92,7 @@ enum Parameter
 //   params.AddParameter(eRandomness,0.0,0.000001,1.0);
   // params.AddParameter(eLength,0.5,0.000001,20.0);//in seconds.
    
-   float duration = 60*3.14159265 * 2;
+   float duration = 60*1;
    std::vector<ParameterList*> paramLists;
    paramLists.push_back(&params);
    tree->Generate(/*startTime*/0.0,duration, &paramLists);
@@ -109,8 +109,8 @@ enum Parameter
 
     
     std::vector<std::thread> threads;
-    std::vector<TreeSynthesizer*> synths;
-    
+    std::map<std::thread::id, TreeSynthesizer*> synths;
+    std::mutex synthsLock;
    for(int i=0;i<numLayers+1;i++)
    {
        
@@ -120,6 +120,7 @@ enum Parameter
           strcpy(layerfilename,"layerXX.wav");
           strcpy(paramfilename,"layerXX.wav");
           ParameterList *copyParams = params.Clone();
+          TreeNode* copyTree = tree->Clone();
           copyParams->ResetCoefficients();
           
           /*for noise band*/
@@ -130,7 +131,11 @@ enum Parameter
           MonoBuffer16* buf;
           TreeSynthesizer* synth;
           synth = new MultiSynthesizer(duration);
-          synths.push_back(synth);
+
+          synthsLock.lock();
+          synths[std::this_thread::get_id()] = synth;
+          synthsLock.unlock();
+
           /*
            switch(i)
            {
@@ -191,8 +196,8 @@ enum Parameter
           //         delete paramOutput;
           //      }
           
-error          /* Need copy of tree for thread since it writes things!! */
-          tree->Synthesize(synth,copyParams, i);
+          /* Need copy of tree for thread since it writes things!! */
+          copyTree->Synthesize(synth,copyParams, i);
           buf=(MonoBuffer16*)synth->GetBuffer();
           //layer zero and layer numLayer-1 are the most similar so make sure to put them around the back.
           printf("buf %i peak = %f",i,((MonoBuffer16*)synth->GetBuffer())->GetPeak());
@@ -208,9 +213,10 @@ error          /* Need copy of tree for thread since it writes things!! */
    }
     int i = 0;
     std::for_each(threads.begin(), threads.end(), [&](std::thread &t) {
+        std::thread::id tid = t.get_id();
         t.join();
-        mix->Mix((MonoBuffer16*)synths[i]->GetBuffer(),1.0*44100,1.0,((i==0?numLayers-1:(i-1))+0.5)/((float)numLayers));
-        delete synths[i];
+        mix->Mix((MonoBuffer16*)synths[tid]->GetBuffer(),1.0*44100,1.0,((i==0?numLayers-1:(i-1))+0.5)/((float)numLayers));
+        delete synths[tid];
         i++;
     });
     

@@ -19,7 +19,7 @@ class MetaInterpolation:public Interpolation
 public:
    MetaInterpolation(Interpolation* target,int bottomLayer, int topLayer,int numTopLayers,TreeNode* owner);
    virtual ~MetaInterpolation(){}
-   
+   MetaInterpolation *Clone(Interpolation *target, TreeNode *owner);   
    //randomize looks at the active nodes and picks one to mess with.  
    virtual void Randomize(double startTime, double duration,std::vector<TreeNode*> *activeNodes, std::vector<ParameterList*> *parameters, int layerNum,  int topLayer, int numControlledLayers, int param=-1);
 
@@ -28,6 +28,7 @@ public:
    void Apply(double time, std::vector<double>* params);
    void Attach();
    void Detach();
+   Interpolation *GetTarget(){return mTarget;}
 protected:
    Interpolation* mTarget;
 };

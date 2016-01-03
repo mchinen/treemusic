@@ -375,7 +375,7 @@ afterchildrensynth:
       
       while(lastSampleWritten > totalSamples*(percentComplete/100.0))
       {
-         printf("%i%% done, %i nodes processed, current depth = %i\n",++percentComplete,numNodesProcessed,(*activeNodes).size());
+         printf("[%i] %i%% done, %i nodes processed, current depth = %i\n", layerNumber, ++percentComplete,numNodesProcessed,(*activeNodes).size());
       }
 
    }
@@ -399,9 +399,64 @@ afterchildrensynth:
 	{
 		//finalize (clean up audio so the audio doesn't click/clip at the end
 		for(int i=0;i<kFinalizeSamples;i++)
-			synth->SynthesizeFinalizeSample(&instantParams);		
+			synth->SynthesizeFinalizeSample(&instantParams);
       delete activeNodes;
 	}
+}
+
+TreeNode *TreeNode::Clone(TreeNode *parent, std::map<TreeNode*, TreeNode*> *activeMap)
+{
+    bool root = activeMap == NULL;
+    TreeNode *copy = new TreeNode(parent, mLayerNumber);
+    
+    if (root) {
+        activeMap = new (std::map<TreeNode*, TreeNode*>);
+    }
+    (*activeMap)[this] = copy;
+
+    for (auto &interp : mInterpolations) {
+       /* TODO: make mInterpolations vec of pointers */
+       Interpolation *temp = interp.Clone(copy);
+       copy->mInterpolations.push_back(*temp);
+       delete temp;
+    }
+
+    for (auto meta : mMetaInterps) {
+        TreeNode *realTarget = meta->GetTarget()->GetOwner();
+        TreeNode *copyTarget = (*activeMap)[realTarget];
+        Interpolation *copyInterpTarget = NULL;
+        
+        // find which index it was in the original target, use that to recreate the link in the copy
+        for (int i = 0; i < copyTarget->mInterpolations.size(); i++) {
+            if (&realTarget->mInterpolations[i] == meta->GetTarget()) {
+                copyInterpTarget = &copyTarget->mInterpolations[i];
+            }
+        }
+        copy->mMetaInterps.push_back(meta->Clone(copyInterpTarget, copy));
+    }
+
+    copy->mMidPoint = mMidPoint;
+    copy->mNumLayersToCreate = mNumLayersToCreate;
+    copy->mNumLayersToControl = mNumLayersToControl;
+    copy->mTopLayer = mTopLayer;
+    
+    copy->mIsRefNode = mIsRefNode;
+    
+    for (auto layer : mChildLayers) {
+        //make deep copy
+        ChildLayer copyLayer;
+        copyLayer.left = layer.left->Clone(this, activeMap);
+        copyLayer.right = layer.right->Clone(this, activeMap);
+        copy->mChildLayers.push_back(copyLayer);
+    }
+
+    activeMap->erase(this);
+    
+    if (root) {
+        delete activeMap;
+    }
+
+    return copy;
 }
 
 //not a real deep copy - truncates and inverts.

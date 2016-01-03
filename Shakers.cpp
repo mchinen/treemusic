@@ -282,6 +282,8 @@ Shakers :: Shakers( void )
 {
   int i;
 
+  mWhich = 0;
+
   instType_ = 0;
   shakeEnergy_ = 0.0;
   nFreqs_ = 0;
@@ -782,7 +784,7 @@ int Shakers :: setupNum( int inst )
     defObjs_[0] = MARA_NUM_BEANS;
     setDecays(MARA_SOUND_DECAY,MARA_SYSTEM_DECAY);
     defDecays_[0] = MARA_SYSTEM_DECAY;
-    decayScale_[inst] = 0.9;
+    decayScale_[0] = 0.9;
     nFreqs_ = 1;
     baseGain_ = MARA_GAIN;
     temp = log(nObjects_) * baseGain_ / (StkFloat) nObjects_;
@@ -1097,18 +1099,23 @@ StkFloat Shakers :: ratchet_tick( void ) {
 
 StkFloat Shakers :: tbamb_tick( void ) {
   StkFloat data, temp;
-  static int which = 0;
   int i;
 
   if (shakeEnergy_ > MIN_ENERGY)	{
       shakeEnergy_ *= systemDecay_;    // Exponential system decay
+      if (mWhich < 0) {
+          printf("really bad start\n");
+      }
       if (float_random(1024.0) < nObjects_) {
 	    sndLevel_ += shakeEnergy_;
-	    which = my_random(7);
-	  }  
+	    mWhich = my_random(7);
+          if (mWhich < 0) {
+              printf("really bad end\n");
+          }
+	  }
       temp = sndLevel_ * noise_tick();      // Actual Sound is Random
 	  for (i=0;i<nFreqs_;i++)	inputs_[i] = 0;
-	  inputs_[which] = temp;
+	  inputs_[mWhich] = temp;
       sndLevel_ *= soundDecay_;                   // Exponential Sound decay 
       finalZ_[2] = finalZ_[1];
       finalZ_[1] = finalZ_[0];

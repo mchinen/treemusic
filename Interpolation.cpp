@@ -31,6 +31,24 @@ Interpolation::Interpolation(int bottomLayer, int topLayer,int numTopLayers,Tree
    interpTypeVariable=1.0;
 }
 
+Interpolation *Interpolation::Clone(TreeNode *owner)
+{
+   Interpolation* clone = new Interpolation(0, 0, 0,owner);
+
+   clone->mInterpParams = mInterpParams;
+
+   clone->mParam =mParam;
+   clone->mType=mType;
+   clone->mEndCoef = mEndCoef;
+   clone->mStartTime = mStartTime;
+   clone->mDuration = mDuration;
+   clone->mEndCoef = mEndCoef;
+   clone->interpTypeVariable = interpTypeVariable;
+   clone->mDoesConcatenate = mDoesConcatenate;
+
+   return clone;
+}
+
 //create a similar clone.  Will have a different place in the tree, and therefore different layer status and parent.  
 //Also, the clone must not have this one's meta interps, perhaps.  This is still questionable.
 Interpolation* Interpolation::SimilarClone(int bottomLayer, int topLayer,int numTopLayers,TreeNode* owner)
